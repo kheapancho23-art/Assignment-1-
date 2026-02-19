@@ -1,32 +1,36 @@
+using System;
 
-class Student {
-    String studentID;
-    String name;
-    String course;
+class Student
+{
+    public string studentID;
+    public string name;
+    public string course;
 
     // Constructor
-    public Student(String studentID, String name, String course) {
+    public Student(string studentID, string name, string course)
+    {
         this.studentID = studentID;
         this.name = name;
         this.course = course;
     }
 
-    // Method to display student info
-    public void displayInfo() {
-        System.out.println("Student ID: " + studentID);
-        System.out.println("Name: " + name);
-        System.out.println("Course: " + course);
-        System.out.println();
+    // Method to display info
+    public void displayInfo()
+    {
+        Console.WriteLine("Student ID: " + studentID);
+        Console.WriteLine("Name: " + name);
+        Console.WriteLine("Course: " + course);
+        Console.WriteLine();
     }
 }
 
-public class StudentDemo {
-    public static void main(String[] args) {
-        // Creating two Student objects
+class StudentDemo
+{
+    static void Main(string[] args)
+    {
         Student s1 = new Student("2023001", "Maria Santos", "BS Computer Science");
         Student s2 = new Student("2023002", "Juan Dela Cruz", "BS Information Technology");
 
-        // Calling displayInfo()
         s1.displayInfo();
         s2.displayInfo();
     }
